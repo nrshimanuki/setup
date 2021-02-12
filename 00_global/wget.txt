@@ -1,0 +1,11 @@
+# wget
+====================
+
+## Install
+
+brew install wget
+
+
+## Command
+
+cd

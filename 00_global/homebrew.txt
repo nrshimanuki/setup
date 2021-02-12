@@ -1,0 +1,16 @@
+# Homebrew
+====================
+
+## Install
+
+https://brew.sh/index_ja.html
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+## Command
+
+cd
+brew list
+brew update
+brew install git
+brew install wget

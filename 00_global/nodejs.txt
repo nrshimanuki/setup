@@ -1,0 +1,14 @@
+# Node.js
+====================
+
+## Install
+
+https://nodejs.org/ja/
+https://nodejs.org/ja/download/package-manager/#macos
+
+
+## Command
+
+cd
+node -v
+npm init
