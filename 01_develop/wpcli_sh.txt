@@ -1,0 +1,103 @@
+# wpcli.sh
+==============================
+
+## httpdocsディレクトリ直下で実行
+--------------------
+
+#!/bin/sh
+
+# config
+DB_NAME="testwp"
+DB_USER="testwp"
+DB_PASS="testwp"
+DB_HOST="localhost"
+DB_PREFIX="wptemplate_"
+
+# site
+WP_URL="http://wptemplate.test:8888/wp"
+SITE_TITLE="wptemplate"
+
+# admin
+ADMIN_USER="testwp"
+ADMIN_PASSWORD="testwp"
+ADMIN_EMAIL="example@example.com"
+
+# plugin
+# "classic-editor" "akismet" "custom-post-type-permalinks" "mw-wp-form" "contact-form-7" "contact-form-7-add-confirm" "advanced-custom-fields" "admin-menu-editor" "taxonomy-terms-order" "wp-nested-pages" "tinymce-advanced"
+PLUGINS=("wp-multibyte-patch" "wordpress-importer" "monster-widget" "show-current-template")
+
+# theme
+THEME_NAME="wptemplate"
+
+
+# ----- create wp directory -----
+
+mkdir wp
+cd wp
+
+
+# ----- cli -----
+
+## download
+wp core download --locale=ja
+
+## create wp-config
+wp core config \
+  --dbname=${DB_NAME} \
+  --dbuser=${DB_USER} \
+  --dbpass=${DB_PASS} \
+  --dbhost=${DB_HOST} \
+  --dbprefix=${DB_PREFIX}
+
+## install
+wp core install \
+  --url=${WP_URL} \
+  --title=${SITE_TITLE} \
+  --admin_user=${ADMIN_USER} \
+  --admin_password=${ADMIN_PASSWORD} \
+  --admin_email=${ADMIN_EMAIL}
+
+## update
+wp core update
+wp option update WPLANG ja
+
+## plugin install
+for plugin in ${PLUGINS[@]}
+do
+  wp plugin install $plugin --activate
+done
+
+wp plugin delete hello
+wp plugin update --all
+
+## theme
+cp -r 【copy/theme/path】 wp/wp-content/themes/${THEME_NAME}
+wp theme activate ${THEME_NAME}
+
+## theme delete
+wp theme delete twentynineteen twentyseventeen twentysixteen
+
+## option
+wp option update blogdescription ""
+wp option update posts_per_page 1
+
+## test data
+curl -O https://wpcom-themes.svn.automattic.com/demo/theme-unit-test-data.xml
+curl -O https://raw.githubusercontent.com/jawordpressorg/theme-test-data-ja/master/wordpress-theme-test-date-ja.xml
+wp import ./theme-unit-test-data.xml --authors=create
+wp import ./wordpress-theme-test-date-ja.xml --authors=create
+
+## delete file
+rm theme-unit-test-data.xml wordpress-theme-test-date-ja.xml readme.html wp-config-sample.php
+
+wp media regenerate --yes
+wp rewrite structure '/%category%/%postname%/' --hard
+
+wp user meta update testwp admin_color sunrise
+
+wp widget delete search-2
+wp widget delete recent-posts-2
+wp widget delete recent-comments-2
+wp widget delete archives-2
+wp widget delete categories-2
+wp widget delete meta-2
