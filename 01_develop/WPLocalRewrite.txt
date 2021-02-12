@@ -1,0 +1,8 @@
+# WP-Local RewriteRule
+==============================
+
+## .htaccess
+--------------------
+
+RewriteEngine On
+RewriteRule ^(wp/|wp)$ http://dev.local/ [R=301,L]
