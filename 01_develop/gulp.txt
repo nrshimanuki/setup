@@ -29,7 +29,7 @@ cd develop/xxxxx
 //	echo "// Plugins"
 //	echo "const gulp = require('gulp');"
 //	echo "const sass = require('gulp-sass');"
-//} >> gulpfile.js
+// } >> gulpfile.js
 
 wget https://raw.githubusercontent.com/nrshimanuki/html-template/master/www/package.json -P ./
 wget https://raw.githubusercontent.com/nrshimanuki/html-template/master/www/gulpfile.js -P ./
