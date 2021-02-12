@@ -2,27 +2,24 @@
 ==============================
 
 ## Install
+--------------------
 
 * Node.js
-node --version
-npm --version
-npx --version
 
 npm install --global gulp-cli
 
+cd
+cd develop/xxxxx
 npm init -y
 npm install --save-dev gulp
-gulp --version
+gulp -v
 
 
 ## Command
+--------------------
 
 cd
 cd develop/xxxxx
-
-// npm init -y
-// npm install --save-dev gulp
-// npm install --save-dev gulp-sass
 
 // {
 //	echo "'use strict';\n"
@@ -37,5 +34,16 @@ npm install
 
 
 ## Run
+--------------------
 
 gulp
+
+
+
+# Sass
+==============================
+
+https://www.npmjs.com/package/gulp-sass
+https://github.com/dlmanning/gulp-sass/wiki/Update-to-the-latest-Gulp-Sass
+
+npm install --save-dev node-sass gulp-sass

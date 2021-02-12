@@ -3,5 +3,9 @@
 .htpasswd
 Thumbs.db
 node_modules
-package-lock.json
 sftp-config.json
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite

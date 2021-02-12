@@ -1,14 +1,20 @@
 # Node.js
-====================
+==============================
 
 ## Install
+--------------------
 
 https://nodejs.org/ja/
 https://nodejs.org/ja/download/package-manager/#macos
-node -v
+node --version
+
+npm install
+npm --version
+npx --version
 
 
 ## Command
+--------------------
 
 cd
 cd develop/xxxxx

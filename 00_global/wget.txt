@@ -1,7 +1,8 @@
 # wget
-====================
+==============================
 
 ## Install
+--------------------
 
 * Homebrew
 
@@ -9,6 +10,7 @@ brew install wget
 
 
 ## Command
+--------------------
 
 cd
 cd develop/xxxxx

@@ -1,13 +1,15 @@
 # Git
-====================
+==============================
 
 ## Install
+--------------------
 
 https://git-scm.com/download/mac
 git --version
 
 
 ## Quick setup
+--------------------
 
 cd
 cd develop/xxxxx
@@ -23,3 +25,4 @@ git push -u origin master
 
 
 ## Command
+--------------------
