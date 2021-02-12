@@ -11,3 +11,6 @@ brew install wget
 ## Command
 
 cd
+cd develop/xxxxx
+
+wget https://raw.githubusercontent.com/github/gitignore/master/WordPress.gitignore -P ./

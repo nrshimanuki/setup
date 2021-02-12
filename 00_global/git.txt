@@ -13,6 +13,7 @@ cd
 cd develop/xxxxx
 wget https://raw.githubusercontent.com/github/gitignore/master/WordPress.gitignore -P ./
 mv WordPress.gitignore .gitignore
+
 git init
 git add .gitignore
 git commit -m "first commit"
