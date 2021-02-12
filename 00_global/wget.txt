@@ -3,6 +3,8 @@
 
 ## Install
 
+* Homebrew
+
 brew install wget
 
 

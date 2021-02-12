@@ -5,10 +5,11 @@
 
 https://nodejs.org/ja/
 https://nodejs.org/ja/download/package-manager/#macos
+node -v
 
 
 ## Command
 
 cd
-node -v
+cd develop/xxxxx
 npm init
