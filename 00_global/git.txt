@@ -26,3 +26,17 @@ git push -u origin master
 
 ## Command
 --------------------
+
+**Clone the repository**
+
+git clone https://github.com/nrshimanuki/html-template-min.git
+
+**Push**
+
+git add --all
+git commit -m "Comment"
+git push
+
+**Pull**
+
+git pull origin master
