@@ -1,0 +1,41 @@
+# Gulp
+==============================
+
+## Install
+
+* Node.js
+node --version
+npm --version
+npx --version
+
+npm install --global gulp-cli
+
+npm init -y
+npm install --save-dev gulp
+gulp --version
+
+
+## Command
+
+cd
+cd develop/xxxxx
+
+// npm init -y
+// npm install --save-dev gulp
+// npm install --save-dev gulp-sass
+
+// {
+//	echo "'use strict';\n"
+//	echo "// Plugins"
+//	echo "const gulp = require('gulp');"
+//	echo "const sass = require('gulp-sass');"
+//} >> gulpfile.js
+
+wget https://raw.githubusercontent.com/nrshimanuki/html-template/master/www/package.json -P ./
+wget https://raw.githubusercontent.com/nrshimanuki/html-template/master/www/gulpfile.js -P ./
+npm install
+
+
+## Run
+
+gulp
