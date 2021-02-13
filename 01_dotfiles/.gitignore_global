@@ -1,0 +1,12 @@
+.DS_Store
+.htaccess
+.htpasswd
+Thumbs.db
+node_modules
+sftp-config.json
+src/assets/img/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
