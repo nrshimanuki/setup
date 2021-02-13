@@ -20,17 +20,17 @@
 			$(this).removeClass('close');
 			$(this).addClass('open');
 			$('#button_text').html('CLOSE');
-			$('#l_menu_container').removeClass('close');
-			$('#l_menu_container').addClass('open');
+			$('#l_menu_inner').removeClass('close');
+			$('#l_menu_inner').addClass('open');
 			let h = $(window).height() - 125;
-			$('#l_menu_container').css('height', h + 'px');
+			$('#l_menu_inner').css('height', h + 'px');
 		} else {
 			$('body').css('overflow','initial');
 			$(this).removeClass('open');
 			$(this).addClass('close');
 			$('#button_text').html('MENU');
-			$('#l_menu_container').removeClass('open');
-			$('#l_menu_container').addClass('close');
+			$('#l_menu_inner').removeClass('open');
+			$('#l_menu_inner').addClass('close');
 		}
 	});
 	$('.l_menu_item').on('click', function() {

@@ -13,6 +13,7 @@ git --version
 
 cd
 cd xxxxx/xxxxx
+
 wget https://raw.githubusercontent.com/github/gitignore/master/WordPress.gitignore -P ./
 mv WordPress.gitignore .gitignore
 
@@ -28,15 +29,12 @@ git push -u origin master
 --------------------
 
 **Clone the repository**
-
 git clone https://github.com/nrshimanuki/html-template-min.git
 
 **Push**
-
 git add --all
 git commit -m "Comment"
 git push
 
 **Pull**
-
 git pull origin master

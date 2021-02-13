@@ -10,6 +10,7 @@ npm install --global gulp-cli
 
 cd
 cd xxxxx/xxxxx
+
 npm init -y
 npm install --save-dev gulp
 gulp -v
@@ -21,15 +22,8 @@ gulp -v
 cd
 cd xxxxx/xxxxx
 
-// {
-//	echo "'use strict';\n"
-//	echo "// Plugins"
-//	echo "const gulp = require('gulp');"
-//	echo "const sass = require('gulp-sass');"
-// } >> gulpfile.js
-
-wget https://raw.githubusercontent.com/nrshimanuki/html-template/master/www/package.json -P ./
-wget https://raw.githubusercontent.com/nrshimanuki/html-template/master/www/gulpfile.js -P ./
+wget https://raw.githubusercontent.com/nrshimanuki/html-template-min/main/package.json -P ./
+wget https://raw.githubusercontent.com/nrshimanuki/html-template-min/main/gulpfile.js -P ./
 npm install
 
 

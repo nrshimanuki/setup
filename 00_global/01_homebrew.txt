@@ -1,9 +1,25 @@
-# Node.js
+# Homebrew
 ==============================
 
 ## Install
 --------------------
 
+* https://brew.sh/index_ja.html
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew --version
+brew list
+brew update
+
+
+## Command
+--------------------
+
+**Wget**
+brew install wget
+
+**Node.js**
 brew install nodebrew
 nodebrew --version
 
@@ -21,12 +37,5 @@ node --version
 npm --version
 npx --version
 
-
-## Command
---------------------
-
-cd
-cd xxxxx/xxxxx
-
-npm init
-npm install
+**Git**
+brew install git

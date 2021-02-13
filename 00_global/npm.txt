@@ -11,18 +11,14 @@ https://nodejs.org/ja/
 --------------------
 
 **npm-check-updates**
-
 npm install -g npm-check-updates
 
 **check package.json**
-
 ncu
 
 **update package.json**
-
 ncu -u
 ncu -u xxxxx
 
 **update packages**
-
 npm update
