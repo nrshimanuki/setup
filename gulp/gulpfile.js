@@ -1,16 +1,6 @@
 'use strict';
 
-/*
-src 参照元
-dest 出力先
-watch ファイル監視
-series 直列処理
-parallel 並列処理
-*/
 const { src, dest, watch, series, parallel } = require('gulp');
-
-
-// Plugins
 const sass = require('gulp-sass');
 
 
@@ -70,9 +60,11 @@ const scss_to_css = () => {
 }
 
 
-// ▼ Run or Watch
-exports.default = series(scss_to_css);
+// Watch
+const watch_sass = () =>
+  watch(path.sass.src, scss_to_css);
 
-// exports.w = function () {
-//   watch(path.sass.src, scss_to_css);
-// };
+
+// Run
+exports.default = series(watch_sass);
+

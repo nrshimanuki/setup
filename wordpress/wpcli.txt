@@ -11,7 +11,7 @@ https://wp-cli.org/ja/
 --------------------
 
 cd
-cd develop/xxxxx
+cd xxxxx/xxxxx
 
 mkdir wp
 cd wp

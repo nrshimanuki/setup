@@ -12,7 +12,7 @@ git --version
 --------------------
 
 cd
-cd develop/xxxxx
+cd xxxxx/xxxxx
 wget https://raw.githubusercontent.com/github/gitignore/master/WordPress.gitignore -P ./
 mv WordPress.gitignore .gitignore
 

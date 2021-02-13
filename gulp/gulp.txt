@@ -9,7 +9,7 @@
 npm install --global gulp-cli
 
 cd
-cd develop/xxxxx
+cd xxxxx/xxxxx
 npm init -y
 npm install --save-dev gulp
 gulp -v
@@ -19,7 +19,7 @@ gulp -v
 --------------------
 
 cd
-cd develop/xxxxx
+cd xxxxx/xxxxx
 
 // {
 //	echo "'use strict';\n"

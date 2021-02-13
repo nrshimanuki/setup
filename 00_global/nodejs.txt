@@ -17,6 +17,6 @@ npx --version
 --------------------
 
 cd
-cd develop/xxxxx
+cd xxxxx/xxxxx
 
 npm init

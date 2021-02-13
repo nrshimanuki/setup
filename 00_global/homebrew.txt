@@ -13,7 +13,7 @@ brew list
 --------------------
 
 cd
-cd develop/xxxxx
+cd xxxxx/xxxxx
 
 brew update
 brew install git
