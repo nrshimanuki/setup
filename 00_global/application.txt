@@ -1,67 +1,45 @@
 # Applications
 ==============================
 
-## Brave Browser
---------------------
+**Brave Browser**
 
 
-## Chatwork
---------------------
+**Chatwork**
 
 
-## Clipy
---------------------
+**Clipy**
 
 
-## FileZilla
---------------------
+**FileZilla**
 
 
-## Firefox
---------------------
+**Firefox**
 
 
-## Google Chrome
---------------------
+**Google Chrome**
 
 
-## LibreOffice
---------------------
+**LibreOffice**
 
 
-## Local
---------------------
+**MAMP**
 
 
-## MAMP
---------------------
+**Skitch**
 
 
-## Skitch
---------------------
+**Sourcetree**
 
 
-## Sourcetree
---------------------
+**Spectacle**
 
 
-## Spectacle
---------------------
+**Sublime Text**
+wget https://download.sublimetext.com/Sublime%20Text%20Build%203211.dmg -P ./
 
 
-## Sublime Text
---------------------
+**The Unarchiver**
 
 
-## The Unarchiver
---------------------
-
-
-## Tomato One
---------------------
-
-
-## Visual Studio Code
---------------------
-
+**Visual Studio Code**
 
