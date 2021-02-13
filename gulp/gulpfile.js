@@ -12,9 +12,9 @@ const documentRoot = {
 
 const path = {
 	sass: {
+		// dest: documentRoot.dest + '/wp/wp-content/themes/_s_theme/assets/css',
 		dest: documentRoot.dest + '/assets/css',
 		src:  documentRoot.src  + '/assets/sass/**/*.scss'
-		// dest: documentRoot.dest + '/wp/wp-content/themes/_s_theme/assets/css',
 	},
 	inc: {
 		dest: documentRoot.dest + '/assets/inc',
@@ -25,9 +25,9 @@ const path = {
 		src:  documentRoot.src  + '/assets/js/**/*'
 	},
 	img: {
+		// dest: documentRoot.dest + '/wp/wp-content/themes/_s_theme/assets/img',
 		dest: documentRoot.dest + '/assets/img',
 		src:  documentRoot.src  + '/assets/img/**/*'
-		// dest: documentRoot.dest + '/wp/wp-content/themes/_s_theme/assets/img',
 	},
 	html: {
 		src: [
