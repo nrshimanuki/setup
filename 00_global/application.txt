@@ -8,6 +8,10 @@
 
 
 **Clipy**
+wget https://github.com/Clipy/Clipy/releases/download/1.2.1/Clipy_1.2.1.dmg -P ~/Downloads
+hdiutil mount ~/Downloads/Clipy_1.2.1.dmg
+cp -R /Volumes/Clipy_1.2.1/Clipy.app /Applications/
+hdiutil unmount /Volumes/Clipy_1.2.1
 
 
 **FileZilla**
@@ -29,13 +33,22 @@
 
 
 **Sourcetree**
+wget https://product-downloads.atlassian.com/software/sourcetree/ga/Sourcetree_4.0.2_236.zip -P ~/Downloads
+unzip ~/Downloads/Sourcetree_4.0.2_236.zip -d ~/Downloads
+cp -R ~/Downloads/Sourcetree.app /Applications/
 
 
 **Spectacle**
+wget https://s3.amazonaws.com/spectacle/downloads/Spectacle+1.2.zip -P ~/Downloads
+unzip ~/Downloads/Spectacle+1.2.zip -d ~/Downloads
+cp -R ~/Downloads/Spectacle.app /Applications/
 
 
 **Sublime Text**
-wget https://download.sublimetext.com/Sublime%20Text%20Build%203211.dmg -P ./
+wget https://download.sublimetext.com/Sublime\ Text\ Build\ 3211.dmg -P ~/Downloads
+hdiutil mount ~/Downloads/Sublime\ Text\ Build\ 3211.dmg
+cp -R /Volumes/Sublime\ Text/Sublime\ Text.app /Applications/
+hdiutil unmount /Volumes/Sublime\ Text
 
 
 **The Unarchiver**
