@@ -12,6 +12,9 @@ npm install
 npm --version
 npx --version
 
+brew install nodebrew
+echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
+
 
 ## Command
 --------------------

@@ -2,7 +2,8 @@
 
 const { src, dest, watch, series, parallel } = require('gulp');
 const sass = require('gulp-sass');
-
+const autoprefixer = require('gulp-autoprefixer');
+const browserSync = require('browser-sync').create();
 
 // Settings
 const documentRoot = {
@@ -49,22 +50,37 @@ const setting = {
 
 
 // Task
-const scss_to_css = () => {
+const sassCss = () => {
  return src(path.sass.src)
 	.pipe(
 		sass({
 			outputStyle: setting.sass.outputStyle
 		}).on('error', sass.logError)
 	)
+	.pipe(autoprefixer())
 	.pipe(dest(path.sass.dest))
+	.pipe(browserSync.reload({ stream: true }));
 }
 
 
 // Watch
-const watch_sass = () =>
-  watch(path.sass.src, scss_to_css);
+const watchSassCss = () => {
+	watch(path.sass.src, sassCss);
+}
+
+const watching = () => {
+	browserSync.init({
+		notify: false,
+		proxy: 'http://html-template-min.test:8888',
+		// server: { baseDir: documentRoot.dest },
+		// port:3000,
+	});
+	watch(documentRoot.dest + '/**/*').on('change',browserSync.reload);
+}
 
 
 // Run
-exports.default = series(watch_sass);
+// exports.default = series(watchSassCss);
+// exports.default = series(watchSassCss, watching);
+exports.default = parallel(watchSassCss, watching);
 

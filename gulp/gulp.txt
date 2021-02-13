@@ -40,10 +40,13 @@ gulp
 
 
 
-# Sass
+# Other Plugins
 ==============================
 
 https://www.npmjs.com/package/gulp-sass
 https://github.com/dlmanning/gulp-sass/wiki/Update-to-the-latest-Gulp-Sass
 
 npm install --save-dev node-sass gulp-sass
+npm install --save-dev gulp-autoprefixer
+npm install --save-dev browser-sync
+
