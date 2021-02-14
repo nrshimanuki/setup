@@ -1,15 +1,4 @@
-# Git
-==============================
-
-## Install
---------------------
-
-https://git-scm.com/download/mac
-git --version
-
-
-## Quick setup
---------------------
+# Quick setup
 
 cd
 cd xxxxx/xxxxx
@@ -25,8 +14,7 @@ git remote add origin https://github.com/nrshimanuki/xxxxx.git
 git push -u origin master
 
 
-## Command
---------------------
+# Command
 
 **Clone the repository**
 git clone https://github.com/nrshimanuki/html-template-min.git

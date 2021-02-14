@@ -1,0 +1,4 @@
+cd
+cd xxxxx/xxxxx
+
+wget https://raw.githubusercontent.com/github/gitignore/master/WordPress.gitignore -P ./

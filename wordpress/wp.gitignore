@@ -1,0 +1,12 @@
+httpdocs/wp/*
+!wp-content/
+httpdocs/wp/wp-content/index.php
+httpdocs/wp/wp-content/languages/
+httpdocs/wp/wp-content/plugins/index.php
+httpdocs/wp/wp-content/plugins/akismet/
+httpdocs/wp/wp-content/plugins/hello.php
+httpdocs/wp/wp-content/plugins/show-current-template/
+httpdocs/wp/wp-content/themes/index.php
+httpdocs/wp/wp-content/themes/twenty*
+httpdocs/wp/wp-content/upgrade/
+httpdocs/wp/wp-content/uploads/

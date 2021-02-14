@@ -1,0 +1,16 @@
+wp cli update
+
+cd
+cd xxxxx/xxxxx
+
+mkdir wp
+cd wp
+wp core download --locale=ja
+wp core config --dbname=testwp --dbuser=testwp --dbpass=testwp --dbprefix=testwp_ --locale=ja
+wp core install --url=http://testwp.test:8888/wp --title="TestWP" --admin_user=testwp --admin_password=testwp --admin_email=example@example.com
+wp core update
+wp option update WPLANG ja
+wp plugin delete hello
+wp plugin install wp-multibyte-patch show-current-template --activate
+wp user meta update testwp admin_color sunrise
+wp core language update
