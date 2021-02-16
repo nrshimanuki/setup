@@ -1,0 +1,30 @@
+# Instagram Graph API 調査
+
+
+## 作業項目
+
+* facebookとInstagramを連携してビジネスアカウントにする
+	* facebookアカウント作成
+	* Instagramアプリから「ビジネスプロフィールに切り替える」
+* アクセストークン取得
+* InstagramビジネスアカウントIDを取得
+* facebook開発者ツールでアプリ作成<br>https://developers.facebook.com
+	* 開発者アカウント作成
+* FaceBook開発者ページやGraph APIエクスプローラーにアクセスして3段階に渡ってアクセストークンを取得する<br>https://developers.facebook.com/tools/explorer/
+	* 1段階目のアクセストークンを取得する
+		* プロダクトでInstagram追加
+		* ツール → 全てのツール → その他の開発ツール → アクセストークンツール
+	* 2段階目のアクセストークンを取得する
+		* 設定 → ベーシック → アプリID,app secret
+	* 3段階目のアクセストークンを取得する
+		* 1,2を使用したURLを生成してアクセス
+		* 取得したトークンを使用したURL生成してアクセス
+		* IDを取得
+* InstagramのビジネスアカウントIDを確認
+* PHPでリクエストURLを発行して取得
+* HTMLに出力
+
+
+## 注意点
+
+* ビジネスアカウントに紐付けしたfacebookページ以外で、自分のInstagramアカウントで投稿した内容をfacebookで共有・シェアすることができなくなる
