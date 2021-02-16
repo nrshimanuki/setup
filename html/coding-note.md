@@ -3,18 +3,18 @@
 
 ## MarkUp
 
-**メールアドレス**
+### メールアドレス
 * spam防止のためエンティティ化する
 
-**ロールオーバー**
+### ロールオーバー
 ```
 <input type="image" name="submit" src=".." value="確認" alt="確認" onMouseOver="this.src='..'" onMouseOut="this.src='..'">
 ```
 
-**画像**
+### 画像
 画像でも段落の要素があるなら、 div じゃなく p で囲う。
 
-**datatime**
+### datatime
 ```
 <a href="#">
 	<article>
@@ -24,7 +24,7 @@
 </a>
 ```
 
-**画像がコンテンツ幅より大きいとき**
+### 画像がコンテンツ幅より大きいとき
 ```
 .pageTitle {
 	width: 100%;
@@ -43,7 +43,7 @@
 }
 ```
 
-**背景画像を中央配置**
+### 背景画像を中央配置
 .box {
 	position: relative;
 }
@@ -59,7 +59,7 @@
 	content: "";
 }
 
-**Button**
+### Button
 * コード上で改行あると、ブラウザでスペース空く
 ```
 <button type="submit"><img src=""></button>
@@ -75,7 +75,7 @@ buttom {
 }
 ```
 
-**マウスオーバー（重ねる）**
+### マウスオーバー（重ねる）
 ```
 <li class="home"><a href="#"><img src="通常時の画像"></a></li>
 <li class="about"><a href="#"><img src="通常時の画像"></a></li>
@@ -95,6 +95,6 @@ li.about a {
 ```
 ※ 通常画像を透過で指定すると下の画像透けるので注意
 
-**ウインドウの幅を縮めたとき、右側が切れる**
+### ウインドウの幅を縮めたとき、右側が切れる
 bodyにmin-widthを指定する
 
