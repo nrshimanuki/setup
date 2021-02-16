@@ -16,13 +16,72 @@ git push -u origin main
 
 # Command
 
-**Clone the repository**
+## Clone repository
 git clone https://github.com/nrshimanuki/xxxxx.git
 
-**Push**
+## Push
 git add --all
 git commit -m "Comment"
 git push
 
-**Pull**
+## Pull
 git pull origin main
+
+## Diff
+git diff
+
+## Log
+git log
+
+## Restore working tree files
+git checkout HEAD .
+git checkout .
+
+## Revert some existing commits
+git revert <commit>
+
+## List branches
+git branch
+
+## Create a new bran
+git branch <branch name>
+  or
+git checkout main
+git checkout -b <branch name>
+
+## Change branch
+git checkout <branch name>
+
+## Delete branch
+git checkout -d <branch name>
+
+## Merge
+git checkout main
+git merge develop
+
+**Ex**
+git add --all
+git commit -m "modified"
+git push -u origin develop
+git checkout main1
+git merge develop
+git push -u origin main
+git checkout develop
+git branch
+
+## Rebase
+git checkout main
+git pull origin main
+git checkout hoge
+git rebase main
+
+git add 〜
+git rebase --continue
+
+git push -f origin hoge
+
+1. rebaseしたいブランチを最新にする
+2. 作業ブランチに戻る
+3. rebaseする (git branch で確認すると一時的なブランチにいる)
+4. コンフリクトが発生したら解決する
+5. リモートのoriginと相違している状態になったためpushしようとするとエラーになるので、-fで強制的にpushする
