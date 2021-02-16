@@ -44,6 +44,7 @@
 ```
 
 ### 背景画像を中央配置
+```
 .box {
 	position: relative;
 }
@@ -58,6 +59,7 @@
 	background: url(img01.png) no-repeat;
 	content: "";
 }
+```
 
 ### Button
 * コード上で改行あると、ブラウザでスペース空く
