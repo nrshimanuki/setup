@@ -1,0 +1,5 @@
+# git remote to usb
+==============================
+
+cd /Volumes/USB_BUFFALO/git
+git init --bare xxxxx.git
