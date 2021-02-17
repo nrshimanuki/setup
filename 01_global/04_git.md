@@ -14,6 +14,13 @@ git --version
 ```
 
 
+## Change default branch name
+
+```
+git config --global init.defaultBranch main
+```
+
+
 ## Name and E-mail
 
 ```
@@ -24,4 +31,6 @@ git config --global user.email 'test@example.com
 
 ## Color setting
 
-``` git config --global color.ui auto ```
+```
+git config --global color.ui auto
+```
