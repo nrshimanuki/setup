@@ -6,16 +6,20 @@ cd xxxxx/xxxxx
 mkdir wp
 cd wp
 wp core download --locale=ja
-wp core config --dbname=testwp --dbuser=testwp --dbpass=testwp --dbprefix=testwp_ --locale=ja
-wp core install --url=http://testwp.test:8888/wp --title="TestWP" --admin_user=testwp --admin_password=testwp --admin_email=example@example.com
+wp core config --dbprefix=testwp_ --dbname=testwp --dbuser=testwp --dbpass=testwp --locale=ja
+// wp config set DB_HOST localhost:/Applications/MAMP/tmp/mysql/mysql.sock
 
+wp config set WP_DEBUG true --raw
+
+wp core install --url=http://testwp.test:8888/wp --title="TestWP" --admin_user=testwp --admin_password=testwp --admin_email=example@example.com
 wp core language install ja --activate
+wp option update WPLANG ja
 wp option update timezone_string 'Asia/Tokyo'
 wp option update date_format 'Y-m-d'
 wp option update time_format 'H:i'
-
-wp option update WPLANG ja
 wp option update blogdescription ""
+// wp option update posts_per_page 1
+
 wp plugin delete hello
 wp plugin install wp-multibyte-patch duplicate-post show-current-template --activate
 
@@ -40,13 +44,13 @@ wp plugin install wp-multibyte-patch duplicate-post show-current-template --acti
 // wp widget delete categories-2
 // wp widget delete meta-2
 
-// wp option update posts_per_page 1
-
-wp post delete 1 2 3 --force
-wp user meta update testwp admin_color sunrise
 wp core update --locale=ja --force
 wp core language update
+wp user meta update testwp admin_color sunrise
+wp post delete 1 2 3 --force
 rm readme.html wp-config-sample.php
+// wp config set DB_HOST localhost
+
 
 ---
 
