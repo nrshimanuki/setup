@@ -24,7 +24,7 @@ wp option update blogdescription ""
 wp plugin delete hello
 wp plugin install wp-multibyte-patch duplicate-post show-current-template --activate
 
-// wp plugin install advanced-custom-fields custom-post-type-ui mw-wp-form contact-form-7 custom-post-type-permalinks monster-widget --activate
+// wp plugin install advanced-custom-fields custom-post-type-ui mw-wp-form contact-form-7 custom-post-type-permalinks admin-menu-editor monster-widget --activate
 // wp plugin install wordpress-importer --activate
 // curl -O https://wpcom-themes.svn.automattic.com/demo/theme-unit-test-data.xml
 // curl -O https://raw.githubusercontent.com/jawordpressorg/theme-test-data-ja/master/wordpress-theme-test-date-ja.xml
