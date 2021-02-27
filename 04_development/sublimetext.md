@@ -106,13 +106,14 @@ SublimeText
 	"move_to_limit_on_up_down": true,
 	"open_files_in_new_window": false,
 	"remember_open_files": false,
+	"scroll_past_end":true,
 	"show_encoding": true,
 	"show_full_path": true,
 	"show_line_endings": true,
 	"show_minimap": false,
 	"tab_size": 2,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true
+	"word_wrap": true,
 }
 ```
 
