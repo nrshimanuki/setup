@@ -1,4 +1,5 @@
-# WP-CLI
+WP-CLI
+===
 
 ## Install
 
